@@ -47,4 +47,4 @@ collapsibleButton.addEventListener('click', () => {
   collapsibleContent.animate(showContentKeyframes, ANIMATION_OPTIONS);
   
   isContentVisible = true;
-})
+});
