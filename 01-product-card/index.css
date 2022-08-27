@@ -1,1 +1,167 @@
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Arial';
+  font-style: normal;
+
+  background: #F6F6F6;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+
+.main__title {
+  margin-bottom: 40px;
+
+  font-size: 48px;
+  line-height: 72px;
+  text-transform: uppercase;
+
+  color: #000000; 
+}
+
+.cards-wrapper {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 20px; 
+}
+
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  min-width: 290px;
+
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+
+.сard__tags {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+
+  display: flex;
+  column-gap: 17px;
+}
+
+.card__tag {
+  padding: 0 16px;
+
+  border-radius: 8px;
+}
+
+.card__tag-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: #2F2F2F;
+}
+
+.card__tag_theme_new {
+  background-color: #FDCFF3;
+}
+
+.card__tag_theme_last {
+  background-color: #FFCF56;
+}
+
+.card__image {
+  height: 214px;
+  width: 100%;
+
+  border-radius: 8px 8px 0 0;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 24px;
+  height: 100%;
+  padding: 24px;
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  
+  color: #2F2F2F;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 36px; 
+}
+
+.card__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card__button {
+  width: 100%;
+  padding: 12px 0;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+
+  background: transparent;
+  color: #42940F;
+  border: 2px solid #42940F;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background: #42940F;
+  color: #FFFFFF;
+  border: 2px solid #42940F;
+}
+
+.card__button:active {
+  background: #1F5200;
+  color: #FFFFFF;
+  border: 2px solid #1F5200;
+}
+
+.card__button_disabled {
+  background: #4E4E4E;
+  color: #FFFFFF;
+  border: 2px solid #4E4E4E;
+}
+
+@media (max-width: 1160px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media (max-width: 765px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr; 
+  }
+}
