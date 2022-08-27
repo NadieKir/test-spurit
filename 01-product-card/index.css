@@ -76,11 +76,11 @@ h1, h2, h3, h4, h5, h6, p {
   color: #2F2F2F;
 }
 
-.card__tag_theme_new {
+.card__tag--new {
   background-color: #FDCFF3;
 }
 
-.card__tag_theme_last {
+.card__tag--last {
   background-color: #FFCF56;
 }
 
@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6, p {
   border: 2px solid #1F5200;
 }
 
-.card__button_disabled {
+.card__button--disabled {
   background: #4E4E4E;
   color: #FFFFFF;
   border: 2px solid #4E4E4E;
