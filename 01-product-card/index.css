@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 48px;
   line-height: 72px;
   text-transform: uppercase;
+  text-align: center;
 
   color: #000000; 
 }
@@ -52,7 +53,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 12px;
 }
 
-.сard__tags {
+.card__tags {
   position: absolute;
   top: 16px;
   left: 16px;
